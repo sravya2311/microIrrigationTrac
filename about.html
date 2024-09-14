@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .outer{
+                background-attachment:scroll;
+background-clip:border-box;
+/* background-color:rgb(239, 239, 239); */
+/* background-color: #efd1d1; */
+/* background-color: #d9ead3; */
+/* background-color: #e2efdd; */
+/* background-color: #e4b188; */
+background-color: #a7a09c;
+background-image:none;
+background-origin:padding-box;
+background-size:auto;
+box-sizing:border-box;
+display:block;
+height:3600px;
+width:1507.8px;
+            }
+            .content-section{     
+background-size:cover;
+display:block;
+padding-top:120px;
+position:relative;
+            }
+            .content-wrap-double{
+                box-sizing:border-box;
+display:block;
+height:676.8px;
+position:relative;
+width:154.8px;
+z-index:3;
+            }
+            .container{
+                box-sizing:border-box;
+display:block;
+height:676.8px;
+margin-left:122.4px;
+margin-right:122.4px;
+max-width:720px;
+padding-left:15px;
+padding-right:15px;
+width:720px;
+            }
+            .row-flex{
+                align-items:center;
+box-sizing:border-box;
+display:flex;
+flex-wrap:wrap;
+height:676.8px;
+line-height:27.2px;
+margin-left:-15px;
+margin-right:-15px;
+position:relative;
+width:720px;
+            }
+            .col{
+                box-sizing:border-box;
+color:rgb(0, 0, 0);
+display:flex;
+flex-basis:auto;
+flex-direction:column;
+flex-grow:0;
+flex-shrink:1;
+float:left;
+font-family:"Miller Display", Georgia, serif;
+font-size:16px;
+height:696.8px;
+left:660px;
+line-height:27.2px;
+min-height:1px;
+padding-left:20px;
+padding-right:15px;
+position:relative;
+text-size-adjust:100%;
+width:400px;
+-webkit-font-smoothing:antialiased;
+            }
+            .wrapper-double{
+                box-sizing:border-box;
+color:rgb(0, 0, 0);
+display:block;
+font-family:"Miller Display", Georgia, serif;
+font-size:16px;
+line-height:27.2px;
+text-size-adjust:100%;
+            }
+            .col-image{
+                box-sizing:border-box;
+display:flex;
+flex-basis :auto;
+flex-direction:column;
+flex-grow:0;
+flex-shrink:1;
+float:left;
+height:194.062px;
+padding-left:15px;
+padding-right:15px;
+position:relative;
+right:300px;
+width:360px;
+            }
+            .image{
+                box-sizing:border-box;
+color:rgb(0, 0, 0);
+display:flex;
+flex-basis:auto;
+flex-direction:column;
+float:left;
+height:524.062px;
+padding-left :15px;
+padding-right:15px;
+position:relative;
+width:500px;
+left:400px;
+bottom: 580px;
+            }
+            .col1{
+                box-sizing:border-box;
+color :rgb(0, 0, 0);
+display :flex;
+flex-basis:auto;
+flex-direction:column;
+flex-grow:0;
+flex-shrink:1;
+float:left;
+left:140px;
+font-family:"Miller Display", Georgia, serif;
+font-size:16px;
+height:221.537px;
+line-height:27.2px;
+min-height:1px;
+padding-left:15px;
+padding-right:15px;
+bottom: 170px;
+position:relative;
+text-size-adjust :100%;
+width:390px;
+-webkit-font-smoothing:antialiased;
+            }
+            .col-image1{
+                box-sizing:border-box;
+display:flex;
+flex-basis:auto;
+flex-direction:column;
+flex-grow:0;
+flex-shrink:3;
+float:left;
+height:194.062px;
+margin-left :59.9875px;
+padding-left :15px;
+padding-right :15px;
+left:460px;
+bottom: 360px;
+position:relative;
+            }
+            .image1{
+                box-sizing:border-box;
+display :block;
+height:194.062px;
+left:700px;
+bottom: 580px;
+            }
+            * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+      html,body {
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          line-height: 1.7em;
+          scroll-behavior: smooth;
+      }
+
+      h1, h2, h3 {
+          padding-bottom: 20px;
+      }
+
+      p {
+          margin: 10px 0;
+      }
+
+      .bg-dark {
+          background: #333;
+          color: #fff;
+      }
+      .text-primary {
+          color: #f7c08a;
+      }
+ 
+.bg-image {
+  background-image: url("https://thumbs.dreamstime.com/b/indian-food-curry-butter-chicken-palak-paneer-chiken-tikka-biryani-vegetable-curry-papad-dal-palak-sabji-jira-alu-rice-138550014.jpg");
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-text {
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4);
+  color: white;
+  font-weight: bold;
+   border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+      .start{
+    position: absolute;
+  bottom: -30%;
+  left: 380px;
+  font-size: 30px;
+  font-family: Playfair Display;
+  color: crimson;
+}
+.start-a{
+    position: absolute;
+  bottom: -36.5%;
+  left: 400px;
+  font-size: 50px;
+  font-family: Playfair Display;
+  color: crimson;
+}
+.start-b{
+    position: absolute;
+  bottom: -40.5%;
+  left: 400px;
+  font-size: 30px;
+  color: rgb(220, 20, 60);
+  font-family: Oswald;
+}
+.start-c{
+    position: absolute;
+  bottom: -45.1%;
+  left: 400px;
+  font-size: 30px;
+  font-family: Playfair Display;
+  color: crimson;
+}
+.start-d{
+    position: absolute;
+  bottom: -51%;
+  left: 400px;
+  font-size: 50px;
+  font-family: Playfair Display;
+  color: crimson;
+}
+.start-e{
+    position: absolute;
+  bottom: -56%;
+  left: 390px;
+  font-size: 30px;
+  font-family: Playfair Display;
+  color: crimson;
+}
+.img-a{
+  position: absolute;
+  bottom: -650px;
+  left: 53%;
+}
+#showcase {
+    /* background: url('./images/top-2.jpg') no-repeat center center/cover; */
+    background: url('https://images.pexels.com/photos/1517479/pexels-photo-1517479.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;
+    /* filter: blur(8px);
+    -webkit-filter: blur(8px); */
+     height: 100%; 
+    height:575px;
+    position: relative;   
+}
+.showcase-content {
+    color: #fff;
+    text-align: center;
+    padding-top: 90px ;
+    
+}
+.content {
+    background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4);
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+    
+}
+.main-navbar {
+      overflow: hidden;
+      background-color: #333;
+    }   
+    .main-navbar a {
+      float: right;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    .main-navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: red;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }                                  
+    .current {
+        background-color: red;
+    }
+        </style>
+    </head>
+    <body>
+
+
+
+        <div class="main-navbar">
+            
+            
+            <a href="contact.html">Contact</a> 
+            <a href="about.html">About</a>
+            <a href="home_pg.html">Home</a> 
+            <a href="form.html">Login</a> 
+            
+            </div>  
+          </div>
+
+
+
+
+         
+
+
+
+
+        
+        <div id="showcase">
+            <div class="container">
+                <div class="showcase-content">
+                    <!-- <h1 class="text-primary">Welcome to the page!</h1> -->
+                    <div class="content">
+                    <p class="lead"> <h2 style="font-size:20px">Get the first-class value with drip irrigation</h2>
+                        </p></div>
+                </div>
+            </div>
+        </div>
+        <pre>
+            <div class="start" style="font-size: 250%;"> "Give </div>
+            <h5><div class="start-a">the plants</div></h5>
+            <div class="start-b">only</div>
+            <div class="start-c">according to</div>
+            <h5><div class="start-d">their</div></h5>
+            <div class="start-e" style="font-size: 250%;">needs" </div>
+        </pre>
+        <div class="img-a">
+            <!-- <img src = "https://global.discourse-cdn.com/envato/original/3X/2/6/26b0ede9648e23432810826e6e9eebecc90975d1.jpg" 
+            usemap = "#image-map" align = "right" width="400px" height="500px"> -->
+
+            <img src = "indmap.jpeg" usemap = "#image-map" align = "right" >
+        </div>
+            <map name = "image-map">
+                <map name="image-map">
+                    <area target="_self" alt="Karnataka" title="Karnataka" href="#karnataka" coords="119,515,124,479,147,471,172,449,186,438,189,458,186,470,188,485,180,493,177,507,172,519,178,528,182,533,191,539,199,539,206,550,198,558,188,567,187,576,178,585,166,587,158,587,150,582,139,573,133,561,128,551,126,536" shape="poly">
+                    <area target="_self" alt="Maharashtra" title="Maharashtra" href="#maharashtra" coords="106,492,98,457,90,407,90,390,101,393,112,384,124,364,111,368,126,352,139,364,149,368,159,369,173,365,185,362,194,369,206,368,216,368,227,368,241,368,248,370,253,378,251,390,250,402,255,412,250,418,246,426,238,408,212,404,199,413,196,421,194,428,180,436,171,452,118,488" shape="poly">
+                    <area target="_self" alt="Andhra Pradesh" title="" href="#andhra pradesh" coords="222,508,259,488" shape="rect">
+                    <area target="_self" alt="Andhra Pradesh" title="" href="#andhra pradesh" coords="216,522,32" shape="circle">
+                    <area target="_self" alt="Andhra Pradesh" title="" href="#andhra pradesh" coords="280,476,232,497" shape="rect">
+                   
+                   
+        
+                    <area target="_self" alt="gujarat" title="gujarat" href="#gujarat" coords="67,344,52" shape="circle">
+        
+                    
+                    <area target="_self" alt="gujarat" title="gujarat" href="#gujarat" coords="3,330,81,294" shape="rect">
+            
+                   
+                    <area target="_self" alt="Rajasthan" title="Rajasthan" href="#rajasthan" coords="124,326,102,296,60,286,34,230,56,216,81,218,101,194,125,169,138,188,154,198,166,216,175,216,189,227,200,246,174,269,175,277,188,278,177,287,181,296,177,303,161,304,156,309,148,284,138,290,136,301,136,311,133,321" shape="poly">
+           
+                     </map>
+            </map>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <marquee >(click on each state in the map to scroll to the respective states)</marquee>
+            <br>
+            <section class="outer">
+                <div class="content-section">
+                    <div class="content-wrap-double">
+                        <div class="container">
+                            <div class="row-flex">
+                                <div class="col">
+                                    <h3 id="maharashtra">  Maharashtra</h3>
+                                    <p>
+                                        In Maharashtra, out of 9.42 lakh hectares land under sugarcane plantation, only 2.25 lakh hectares has been brought under micro-irrigation system. By 2019, the state government wants to bring the remaining 7.18 lakh hectares land under micro-irrigation system.
+    
+                                    </p>
+                                </div>
+                                <div class="col-image">
+                                    <div class="image">
+                                        <img src="https://images.livemint.com/rf/Image-621x414/LiveMint/Period2/2017/07/19/Photos/Processed/sugar-kDcB--621x414@LiveMint-00e0.jpg" alt="misal pav" 
+                                        width="500">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-wrap-double">
+                        <div class="container">
+                            <div class="row-flex">
+                                <div class="col1">
+                                    <div class="wrapper-double">
+                                        <h3 id="rajasthan"> Rajasthan</h3>
+                                        <p>
+                                            Rajasthan has Net Cropped area of 183.49 Lac hectares, out of this, approximately 75% of area is rain-fed (116.88 lac hectares) and only 25% is irrigated area (66.61 lac hectares) (1) However, this 25% irrigated area contributes more than 50 percent of agricultural output. Main sources of irrigation in Rajasthan are:
+                                           Open Wells: 31.62%,Tube-wells: 41.91%,Canals: 24.45%,Tanks: 0.84%,
+                                         Other sources: 1%.
+                                         73% of irrigation is through tube-wells and wells placing enormous stress on groundwater. It is particularly alarming that share of tube-wells over the last four decades has shot up from 1 percent in 1967-68 to 39 percent.</p>
+                                    </div>
+                                    <div class="col-image1">
+                                        <div class="image1">
+                                            <img src="https://live.staticflickr.com/3718/11623206044_b26678288f_w.jpg" 
+                                            alt="Dal Bati Churma" width="420" height="300">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-section">
+                        <div class="content-wrap-double">
+                            <div class="container">
+                                <div class="row-flex">
+                                    <div class="col">
+                                        <h3 id="karnataka">Karnataka  </h3>
+                                        <p>  In the State, The net area irrigated through groundwater increased substantially from 1.5 lakh hectares (16.0 % of net sown area) in 1962-63 to 16.2 lakh hectares (53.0 % of net sown area) in 2009-10. Analysis of cropping pattern of the last five decades reveals the marked shift from low water intensive crops to high water requiring crops such as sugarcane and vegetables. Both the Karnataka state water policy and agricultural policy take cognizance of the problem of groundwater depletion and suggested among others, the promotion of drip and sprinkler irrigation. Various subsidy schemes to encourage the farmers to adopt micro-irrigation are in vogue. But, the level of adoption of drip and sprinkler irrigation systems remains low. 
+                                       
+                                                </p>
+                                    </div>
+                                    <div class="col-image">
+                                        <div class="image">
+                                            <img src="https://images.livemint.com/rf/Image-621x414/LiveMint/Period2/2017/07/19/Photos/Processed/sugar-kDcB--621x414@LiveMint-00e0.jpg" alt="misal pav" 
+                                            width="500">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <div class="container-wrap-double">
+                        <div class="container">
+                            <div class="row-flex">
+                                <div class="col1">
+                                    <div class="wrapper-double">
+                                        <h3 id="gujarat"> Gujarat</h3>
+                                        Gujarat Green Revolution Com­pany (GGRC), a unique joint venture between a consortium of three Gujarat public sector units involved in agriculture and the Indian government.Formed in 2005, the GGRC is a one-stop shop for farmers who want to adopt advanced micro-irrigation techniques. Drip irrigation systems usually cost between Rs 50,000 and Rs 1.5 lakh per hectare, which is why most farmers shy away from investing. But the GGRC not only provides a 70-90 per cent subsidy to attract farmers, but it also has officials working along with them to select the best micro systems at fixed prices. They even see them through the first crop, giving specialist advice. The pipes for micro-irrigation, including sprinklers, drippers and rain guns, are placed and monitored using geo-fencing and tagging for quick response by GGRC officials.
+                                        </p>
+                                    </div>
+                                    <div class="col-image1">
+                                        <div class="image1">
+                                            <img src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2018/07/05/701130-narmadariver-canal-irrigation-070518.jpg" 
+                                            alt="dhokla" width="450" height="350">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="content-section">
+                        <div class="content-wrap-double">
+                            <div class="container">
+                                <div class="row-flex">
+                                    <div class="col">
+                                        <h3 id="andhra pradesh">  Andra Pradesh</h3>
+                                        <p>
+                                            The state of Andhra Pradesh is blessed with about 
+                                            40 major and medium rivers out of which Godavari, Krishna and Pennar 
+                                            rivers contribute to the major chunk of the surface waters. The state has about 40000 minor irrigation sources spread over the thirteen districts. The Geographical area of the state is about 402.70 lakh acres out of which the total cultivable area is 199.04 lakh acres and out of which the irrigation potential is created for 103.11 lakh acres through the existing Major, Medium and Minor irrigation projects. The Water Resources Department caters to the Irrigation, Drinking and Industrial needs of the state of Andhra Pradesh and thus addresses one of the basic needs of the mankind, i.e., food, by providing water to the crops through its system comprising Reservoirs, Canals and other related infrastructure.
+                                        
+                                          </p>
+                                    </div>
+                                    <div class="col-image">
+                                        <div class="image">
+                                            <img src="https://images.livemint.com/rf/Image-621x414/LiveMint/Period2/2017/07/19/Photos/Processed/sugar-kDcB--621x414@LiveMint-00e0.jpg" alt="misal pav" 
+                                            width="500">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+    
+    
+    
+                </section>
+        </body>
+    </html>
